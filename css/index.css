@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/****pc*************************************/
+
+body {
+    color: #707070;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 45px;
+    margin-top: 220px;
+    margin-bottom: 204px;
+}
+
+section .menu {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    margin-bottom: 340px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    display: flex;
+    justify-content: flex-start;
+}
+section .menu div {
+    width: 25%;
+    flex-grow: 0;
+}
+section .menu div a {
+    color: #707070;
+    white-space: nowrap;
+}
+section .menu div a:hover {
+    border-bottom: 1px solid #707070;
+    padding: 0 5px 4px;  
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 22px;
+}
+
+/********모바일 미디어쿼리********************************/
+@media all and (max-width:1280px) {
+    header {
+        margin-top: 180px;
+        margin-bottom: 120px;
+    }
+    section .menu {
+        width: 100%;
+        display: block;
+        margin-bottom: 140px;
+    }
+    section .menu div {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}

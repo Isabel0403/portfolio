@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/*******리스트*****************************/
+.list-page {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    margin-top: 14px;
+    padding: 0 30px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 26px 26.66px;
+}
+.list-page .thum {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #aaa;
+    flex-grow: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.list-page .info {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(54,54,54,0.8);
+    padding-top: 100px;
+    color: #fff;
+    position: absolute;
+    top: 300px;
+    transition: all 0.5s;
+}
+.list-page .thum .info h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 12px 24px 24px;
+}
+.list-page .thum .info p {
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #ccc;
+    padding: 6px 16px;
+    display: inline;
+    position: absolute;
+    top: 220px;
+    left: 95.47px;
+}
+.list-page .thum:hover .info {
+    transform: translateY(-300px);
+}
+.list-page .thum>img {
+    display: block;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+}
+
+
+/**모바일 미디어쿼리**************************************/
+@media all and (max-width: 1340px) {
+    .list-page {
+        margin-top: 100px;
+        justify-content: center;
+    }
+    .list-page .info {
+        display: none;
+    }
+}
