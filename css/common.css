@@ -12,10 +12,9 @@ ul, ol, li {
 a {
     text-decoration: none;
 }
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
+button {
+    border: none;
+    outline: none;
 }
 
 /*******헤더*****************************/
@@ -79,6 +78,8 @@ header .menu li a:hover {
         left: 0;
         z-index: 9;
     }
+
+    /**햄버거 버튼**/
     header .menuBtn {
         width: 26px;
         display: block;
@@ -96,17 +97,19 @@ header .menu li a:hover {
     header .menuBtn div:nth-child(2) {
         margin: 4px 0;
     }
-    /* header .menu-btn div:nth-child(1) {
+
+    header .menuBtn:active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
-    header .menu-btn div:nth-child(2) {
+    header .menuBtn:active div:nth-child(2) {
         opacity: 0;
     }
-    header .menu-btn div:nth-child(3) {
+    header .menuBtn:active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-    } */
+    }
 
-    #menuWarp {
+    /**햄버거 메뉴**/
+    .menuWarp {
         display: none;
     }
     header .menu {
@@ -128,7 +131,5 @@ header .menu li a:hover {
     header .menu li>a {
         color: #fff;
         width: 100%;
-    }
-
-    
+    }    
 }

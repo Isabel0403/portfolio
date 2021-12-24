@@ -1,21 +1,25 @@
 'use strict';
 
 //햄버거버튼
-const btn = document.getElementsByClassName("menuBtn");
-const menu = document.getElementsById("menuWarp");
 
-function btn(){
+const menubtn = document.querySelector(".menuBtn"); {
+  menubtn.addEventListener('click', e => {
+    const menubtn = e.currentTarget;
+    current.classlist.toggle('active');
+    const menuwarp = parent.querySelector(".menuWarp");
 
-	btn.onclick =  function() {
-        menu.style.display = "block";
-        //console.log(num);
-    };
-
-	/* const menu = document.getElementsById("menuWarp");
-	if(menu.style.display ='none'){
-		menu.style.display = 'block';
-	}
-	else{
-		menu.style.display = 'none';
-	} */
+    if (menubtn.style.display = none) {
+      menubtn.style.display = block;
+    } 
+  });
 }
+
+
+
+
+
+/* document.getElementsByClassName('menuWarp');
+
+  menuWrap.style.display = 'block';
+
+}); */
